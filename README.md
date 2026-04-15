@@ -14,6 +14,7 @@ CLI-скрипт для автоматичного вбудовування те
 ```bash
 git clone https://github.com/onilyxe/lyrics.git
 cd lyrics
+curl -LsSf https://astral.sh/uv/install.sh | sh
 uv venv
 uv pip install -r requirements.txt
 ```
@@ -31,11 +32,8 @@ uv pip install -r requirements.txt
 
 ```bash
 cd /шлях/до/музики
-
 uv run python /шлях/до/lyrics.py
-
 uv run python lyrics.py --dry-run
-
 uv run python lyrics.py --overwrite
 ```
 
